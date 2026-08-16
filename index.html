@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="shortcut icon" href="./images/icons8-code-32.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=New+Rocker&display=swap" rel="stylesheet">
+    <title>Frontend Developer</title>
+</head>
+<body>
+    <!--Navbar-->
+<nav class="bg-neutral-primary fixed w-full z-20 top-0 start-0 border-b border-default nave">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+  <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+      <img src="./images/logo.png" class="h-20" alt="Flowbite Logo" />
+  </a>
+  <div class="inline-flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+      <button type="button" class="text-white bg-brand hover:bg-brand-strong box-border border border-transparent focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-3 py-2 focus:outline-none btn" id="contactBtn">Contact</button>
+      <div class="contact-modal" id="contactModal">
+    <div class="contact-box">
+        <button class="close-contact" id="closeContact">❌</button>
+        <h2>Let's <span>Connect</span> 💜</h2>
+        <p>Have a question or want to work together? Send me a message!</p>
+        <form id="contactForm" action="https://formsubmit.co/armeenashraf805@gmail.com" method="POST">
+            <input type="text" placeholder="Your Name" required>
+            <input  type="email"  placeholder="Your Email" required>
+            <textarea placeholder="Write your message..." required></textarea>
+               <button type="submit" class="send-message">
+                Send Message ✨
+            </button>
+        </form>
+    </div>
+</div>
+      <button data-collapse-toggle="navbar-cta" type="button" class="inline-flex items-center p-2 w-9 h-9 justify-center text-sm text-body rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary" aria-controls="navbar-cta" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/></svg>
+    </button>
+  </div>
+  <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
+    <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-default rounded-base bg-neutral-secondary-soft md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-neutral-primary">
+      <li>
+        <a href="#home" class="block py-2 px-3 text-white bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0 hov" aria-current="page">Home</a>
+      </li>
+      <li>
+        <a href="#about" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">About</a>
+      </li>
+      <li>
+        <a href="#education" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Education</a>
+      </li>
+       <li>
+        <a href="#skills" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Skills</a>
+      </li>
+       <li>
+        <a href="#projects" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Projects</a>
+      </li>
+    </ul>
+  </div>
+  </div>
+</nav>
+
+  <!--Hero Section-->
+<section class="text-gray-600 body-font relative top-20">
+  <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+    <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Hello,<span class="simple"> I'm</span>
+        <br class="hidden lg:inline-block"><span class="design">Frontend Developer</span>
+      </h1>
+      <p class="mb-8 leading-relaxed text-gray-300">I’m a passionate frontend developer and an 8th-class student who loves creating modern, responsive, and user-friendly websites. I’m skilled in HTML, CSS, JavaScript and Git/GitHub.</p>
+      <div class="flex flex-wrap items-center gap-3 mt-2">
+    <a href="https://github.com/armeenashraf" target="_blank" class="group flex items-center gap-3 rounded-2xl border border-[#c9b3ff]/60 bg-transparent px-4 py-3 text-white shadow-[0_0_18px_rgba(201,179,255,0.08)] transition-all duration-300 hover:-translate-y-1 hover:border-[#c9b3ff] hover:shadow-[0_0_25px_rgba(201,179,255,0.3)]">
+        <span class="flex h-10 w-10 items-center justify-center rounded-xl border border-[#c8a2c8]">
+            <img src="./images/icons8-github-logo-50.png" alt="GitHub Logo" class="h-6 w-6 object-contain">
+        </span>
+        <span class="flex flex-col leading-tight">
+            <span class="text-[10px] font-medium text-white/50">Explore my</span>
+            <span class="text-sm font-semibold text-white">GitHub</span>
+        </span>
+        <i class="fa-solid fa-arrow-up-right-from-square ml-2 text-xs text-white/40 transition-all duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-[#c9b3ff]"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/armeen-ashraf-17b295387/" target="_blank" class="group flex items-center gap-3 rounded-2xl border border-[#c9b3ff]/60 bg-transparent px-4 py-3 text-white shadow-[0_0_18px_rgba(201,179,255,0.08)] transition-all duration-300 hover:-translate-y-1 hover:border-[#c9b3ff] hover:shadow-[0_0_25px_rgba(201,179,255,0.3)]">
+        <span class="flex h-10 w-10 items-center justify-center rounded-xl border border-[#c8a2c8]">
+            <img src="./images/icons8-linkedin-50.png" alt="LinkedIn Logo" class="h-6 w-6 object-contain">
+        </span>
+        <span class="flex flex-col leading-tight">
+            <span class="text-[10px] font-medium text-white/50">Connect on</span>
+            <span class="text-sm font-semibold text-white">LinkedIn</span>
+        </span>
+        <i class="fa-solid fa-arrow-up-right-from-square ml-2 text-xs text-white/40 transition-all duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-[#c9b3ff]"></i>
+    </a>
+    <a href="mailto:armeenashraf805@gmail.com" class="group flex items-center gap-3 rounded-2xl border border-[#c9b3ff]/60 bg-transparent px-4 py-3 text-white shadow-[0_0_18px_rgba(201,179,255,0.08)] transition-all duration-300 hover:-translate-y-1 hover:border-[#c9b3ff] hover:shadow-[0_0_25px_rgba(201,179,255,0.3)]">
+        <span class="flex h-10 w-10 items-center justify-center rounded-xl border-2 border-[#c8a2c8]">
+            <img src="./images/icons8-gmail-logo-50.png" alt="Gmail Logo" class="h-6 w-6 object-contain">
+        </span>
+        <span class="flex flex-col leading-tight">
+            <span class="text-[10px] font-medium text-white/50">Drop me a</span>
+            <span class="text-sm font-semibold text-white">Message</span>
+        </span>
+        <i class="fa-solid fa-arrow-up-right-from-square ml-2 text-xs text-white/40 transition-all duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-[#c9b3ff]"></i>
+    </a>
+    <a href="./images/ArmeenResume.png" download="Armeen-Resume" class="group flex items-center gap-3 rounded-2xl border border-[#c9b3ff]/60 bg-transparent px-4 py-3 text-white shadow-[0_0_18px_rgba(201,179,255,0.08)] transition-all duration-300 hover:-translate-y-1 hover:border-[#c9b3ff] hover:shadow-[0_0_25px_rgba(201,179,255,0.3)]">
+        <span class="flex h-10 w-10 items-center justify-center rounded-xl border-2 border-[#c8a2c8]">
+            <img src="./images/icons8-test-account-50.png" alt="profile Logo" class="h-6 w-6 object-contain">
+        </span>
+        <span class="flex flex-col leading-tight">
+            <span class="text-[10px] font-medium text-white/50">Download CV</span>
+            <span class="text-sm font-semibold text-white">Picture form</span>
+        </span>
+        <i class="fa-solid fa-arrow-up-right-from-square ml-2 text-xs text-white/40 transition-all duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-[#c9b3ff]"></i>
+    </a>
+</div>
+    
+    </div>
+    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+      <img class="object-cover object-center rounded-full drop-shadow-[0_15px_20px_#c8a2c8] me" id="home" alt="hero" src="./images/download.png">
+    </div>
+  </div>
+</section>
+<!--about-->
+<section class="text-gray-600 body-font">
+  <center>
+    <h1 class="text-4xl relative top-10 design" id="about">About</h1>
+  </center>
+  <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+      <img class="object-cover object-center rounded abt" alt="hero" src="./images/abt.jpeg">
+    </div>
+    <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-[#c9b3ff]">I'm <span class="design"> Armeen Ashraf</span>
+      </h1>
+      <p class="text-xl text-[#c9b3ff]">Frontend Developer | UI Dreamer | SMIT Student <br> <span class="text-white">Pakistan , Karachi</span> <br> armeenshraf805@gmail.com ✉️</p>
+      <p class="mb-8 leading-relaxed text-gray-300">I’m a passionate and creative web development learner currently studying in 8th class. I have learned HTML, CSS, and JavaScript and enjoy creating modern, responsive, and user-friendly websites. <span id="hiddenText">I love turning creative ideas into real web projects and experimenting with different designs and layouts. I’m continuously improving my coding skills, learning new concepts, and exploring the world of modern web development. My goal is to keep learning, build meaningful projects, and grow into a skilled web developer.</span> 
+      <a href="#" id="readMore" class="text-[#c9b3ff]">Read More</a>
+      </p>
+      <div class="flex justify-center">
+        <button class="inline-flex text-white focus:outline-none rounded text-lg"><a href="#projects" class="btn2">View Projects</a></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="education" class="py-24 px-6 bg-black text-white">
+    <div class="max-w-5xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-bold"><span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-violet-500 design">Education</span></h2>
+            <p class="text-gray-400 mt-4 max-w-xl mx-auto">A little look at my educational journey and the skills I'm building along the way.</p>
+        </div>
+        <div class="relative">
+            <div class="absolute left-4 md:left-1/2 top-0 bottom-0 w-[2px] bg-gradient-to-b from-transparent via-purple-500 to-transparent md:-translate-x-1/2"></div>
+            <div class="relative flex items-center mb-12">
+            <div class="absolute left-4 md:left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-purple-400 shadow-[0_0_20px_#c084fc] z-10"></div>
+           <div class="ml-12 md:ml-0 md:w-[45%] md:mr-auto group">
+           <div class="relative overflow-hidden rounded-3xl p-6 bg-white/[0.04] border border-white/10 backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:border-purple-400/50 hover:shadow-[0_20px_60px_rgba(168,85,247,0.15)]">
+           <div class="absolute -top-20 -right-20 w-40 h-40 bg-purple-500/10 blur-3xl group-hover:bg-purple-500/20 transition"></div>
+           <div class="relative">
+           <span class="inline-block px-4 py-1 rounded-full text-xs font-semibold text-purple-300 bg-purple-400/10 border border-purple-400/20">2026</span>
+           <h3 class="text-2xl font-bold mt-4">8th Class</h3>
+           <p class="text-purple-300 mt-1">Guards Public School</p>
+           <p class="text-gray-400 text-sm mt-4 leading-6">Currently continuing my school education while exploring my interest in technology, creativity, and web development.</p>
+          </div>
+
+          </div>
+           </div>
+            </div>
+            <div class="relative flex items-center mb-12">
+           <div class="absolute left-4 md:left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-purple-400 shadow-[0_0_20px_#c084fc] z-10"></div>
+           <div class="ml-12 md:ml-auto md:w-[45%] group">
+          <div class="relative overflow-hidden rounded-3xl p-6 bg-white/[0.04] border border-white/10 backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:border-purple-400/50 hover:shadow-[0_20px_60px_rgba(168,85,247,0.15)]">
+           <div class="relative">
+           <span class="inline-block px-4 py-1 rounded-full text-xs font-semibold text-purple-300 bg-purple-400/10 border border-purple-400/20">Learning</span>
+            <h3 class="text-2xl font-bold mt-4">Modern Web Development</h3>
+               <p class="text-purple-300 mt-1">Saylani Mass IT Training</p>
+                <p class="text-gray-400 text-sm mt-4 leading-6">Modern Web Development learner, continuously exploring new technologies and building creative web projects. Currently Leaarned:</p>
+                 <div class="flex flex-wrap gap-2 mt-5">
+                 <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-gray-300">HTML</span>
+                 <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-gray-300">CSS</span>
+                 <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-gray-300">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="min-h-screen px-6  md:px-16 lg:px-24">
+  <div class="max-w-6xl mx-auto">
+    <div class="mb-16 text-center">
+      <span class="text-xs tracking-[0.35em] uppercase text-[#B685E0]">Proficiency</span>
+      <h2 class="text-4xl md:text-5xl font-serif text-[#F5EBFB] mt-3 design" id="skills">Skills</h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="rounded-2xl bg-gradient-to-b from-white/[0.06] to-white/[0.02] border border-white/10 p-6 hover:border-[#C9A6E8]/60 transition-all duration-300">
+        <div class="flex items-center justify-between mb-5">
+          <div class="flex items-center gap-3">
+            <img src="./images/icons8-html-50.png" class="w-8 h-8" alt="HTML">
+            <div>
+              <h3 class="text-[#F5EBFB] font-semibold text-lg">HTML</h3>
+              <p class="text-[11px] uppercase tracking-widest text-[#B685E0]">Expert</p>
+            </div>
+          </div>
+          <span class="text-2xl font-serif text-[#F5EBFB]">98%</span>
+        </div>
+        <div class="w-full h-1.5 bg-white/10 rounded-full overflow-hidden">
+          <div class="h-full rounded-full bg-gradient-to-r from-[#8B5FBF] to-[#C9A6E8]" style="width:98%"></div>
+        </div>
+      </div>
+      <div class="rounded-2xl bg-gradient-to-b from-white/[0.06] to-white/[0.02] border border-white/10 p-6 hover:border-[#C9A6E8]/60 transition-all duration-300">
+        <div class="flex items-center justify-between mb-5">
+          <div class="flex items-center gap-3">
+            <img src="./images/icons8-tailwind-css-50.png" class="w-8 h-8" alt="Tailwind CSS">
+            <div>
+              <h3 class="text-[#F5EBFB] font-semibold text-lg">Tailwind CSS</h3>
+              <p class="text-[11px] uppercase tracking-widest text-[#B685E0]">Expert</p>
+            </div>
+          </div>
+          <span class="text-2xl font-serif text-[#F5EBFB]">98%</span>
+        </div>
+        <div class="w-full h-1.5 bg-white/10 rounded-full overflow-hidden">
+          <div class="h-full rounded-full bg-gradient-to-r from-[#8B5FBF] to-[#C9A6E8]" style="width:98%"></div>
+        </div>
+      </div>
+      <div class="rounded-2xl bg-gradient-to-b from-white/[0.06] to-white/[0.02] border border-white/10 p-6 hover:border-[#C9A6E8]/60 transition-all duration-300">
+        <div class="flex items-center justify-between mb-5">
+          <div class="flex items-center gap-3">
+            <img src="./images/icons8-css-50 (1).png" class="w-10 h-10" alt="CSS">
+            <div>
+              <h3 class="text-[#F5EBFB] font-semibold text-lg">CSS</h3>
+              <p class="text-[11px] uppercase tracking-widest text-[#B685E0]">Expert</p>
+            </div>
+          </div>
+          <span class="text-2xl font-serif text-[#F5EBFB]">95%</span>
+        </div>
+        <div class="w-full h-1.5 bg-white/10 rounded-full overflow-hidden">
+          <div class="h-full rounded-full bg-gradient-to-r from-[#8B5FBF] to-[#C9A6E8]" style="width:95%"></div>
+        </div>
+      </div>
+      <div class="rounded-2xl bg-gradient-to-b from-white/[0.06] to-white/[0.02] border border-white/10 p-6 hover:border-[#C9A6E8]/60 transition-all duration-300">
+        <div class="flex items-center justify-between mb-5">
+          <div class="flex items-center gap-3">
+            <img src="./images/icons8-github-50 (1).png" class="w-8 h-8" alt="GitHub">
+            <div>
+              <h3 class="text-[#F5EBFB] font-semibold text-lg">GitHub</h3>
+              <p class="text-[11px] uppercase tracking-widest text-white/40">Advanced</p>
+            </div>
+          </div>
+          <span class="text-2xl font-serif text-[#F5EBFB]">80%</span>
+        </div>
+        <div class="w-full h-1.5 bg-white/10 rounded-full overflow-hidden">
+          <div class="h-full rounded-full bg-gradient-to-r from-[#8B5FBF] to-[#C9A6E8]" style="width:80%"></div>
+        </div>
+      </div>
+      <div class="rounded-2xl bg-gradient-to-b from-white/[0.06] to-white/[0.02] border border-white/10 p-6 hover:border-[#C9A6E8]/60 transition-all duration-300">
+        <div class="flex items-center justify-between mb-5">
+          <div class="flex items-center gap-3">
+            <img src="./images/icons8-javascript-50.png" class="w-9 h-9" alt="JavaScript">
+            <div>
+              <h3 class="text-[#F5EBFB] font-semibold text-lg">JavaScript</h3>
+              <p class="text-[11px] uppercase tracking-widest text-white/40">Advanced</p>
+            </div>
+          </div>
+          <span class="text-2xl font-serif text-[#F5EBFB]">70%</span>
+        </div>
+        <div class="w-full h-1.5 bg-white/10 rounded-full overflow-hidden">
+          <div class="h-full rounded-full bg-gradient-to-r from-[#8B5FBF] to-[#C9A6E8]" style="width:70%"></div>
+        </div>
+      </div>
+      <div class="rounded-2xl bg-transparent border border-solid border-[#B685E0]/40 p-6">
+        <div class="flex items-center justify-between mb-5">
+          <div class="flex items-center gap-3">
+            <img src="./images/icons8-firebase-50.png" class="w-8 h-8" alt="Firebase">
+            <div>
+              <h3 class="text-white font-semibold text-lg">Firebase</h3>
+              <p class="text-[11px] uppercase tracking-widest text-[#B685E0]">Learning</p>
+            </div>
+          </div>
+          <span class="text-2xl font-serif text-white">45%</span>
+        </div>
+        <div class="w-full h-1.5 bg-white/10 rounded-full overflow-hidden">
+          <div class="h-full rounded-full bg-[#8B5FBF]" style="width:45%"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="min-h-screen px-6 py-24 md:px-16 lg:px-24">
+  <div class="max-w-6xl mx-auto">
+    <div class="mb-16 text-center">
+      <h2 class="text-4xl md:text-5xl font-serif text-[#F5EBFB] mt-3 design" id="projects">Projects</h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="rounded-2xl bg-gradient-to-b from-white/[0.06] to-white/[0.02] border border-white/10 overflow-hidden hover:border-[#C9A6E8]/60 hover:-translate-y-1 transition-all duration-300">
+        <div class="h-40 bg-white/5 flex items-center justify-center">
+          <img src="./images/pw.png" class="w-full h-full object-cover" alt="Project 1 preview">
+        </div>
+        <div class="p-6">
+          <h3 class="text-[#F5EBFB] font-semibold text-lg mb-2">Prime Wheelz</h3>
+          <p class="text-sm text-white/50 leading-relaxed mb-4">A car showcase website for browsing different models, built with HTML, CSS, and Tailwind CSS. Made to practice putting together a full, good-looking multi-section page..</p>
+          <div class="flex flex-wrap gap-2 mb-5">
+            <span class="text-[11px] uppercase tracking-wide text-[#C9A6E8] bg-[#C9A6E8]/10 px-3 py-1 rounded-full">HTML</span>
+            <span class="text-[11px] uppercase tracking-wide text-[#C9A6E8] bg-[#C9A6E8]/10 px-3 py-1 rounded-full">CSS</span>
+            <span class="text-[11px] uppercase tracking-wide text-[#C9A6E8] bg-[#C9A6E8]/10 px-3 py-1 rounded-full">Tailwind CSS</span>
+          </div>
+          <div class="flex items-center gap-4 text-sm">
+            <a href="https://primewheelz.netlify.app/" class="text-[#F5EBFB] hover:text-[#C9A6E8] transition-colors">Live Demo →</a>
+            <a href="https://github.com/armeenashraf/PrimeWheelz.git" class="text-white/40 hover:text-[#C9A6E8] transition-colors">GitHub</a>
+          </div>
+        </div>
+      </div>
+      <div class="rounded-2xl bg-gradient-to-b from-white/[0.06] to-white/[0.02] border border-white/10 overflow-hidden hover:border-[#C9A6E8]/60 hover:-translate-y-1 transition-all duration-300">
+        <div class="h-40 bg-white/5 flex items-center justify-center">
+          <img src="./images/msword.png" class="w-full h-full object-cover" alt="Project 2 preview">
+        </div>
+        <div class="p-6">
+          <h3 class="text-[#F5EBFB] font-semibold text-lg mb-2">Mini MS Word</h3>
+          <p class="text-sm text-white/50 leading-relaxed mb-4">A simplified version of MS Word with tools like bold, italic, and text alignment built in. Made to practice building an actual working interface, not just static pages.</p>
+          <div class="flex flex-wrap gap-2 mb-5">
+                    <span class="text-[11px] uppercase tracking-wide text-[#C9A6E8] bg-[#C9A6E8]/10 px-3 py-1 rounded-full">HTML</span>
+            <span class="text-[11px] uppercase tracking-wide text-[#C9A6E8] bg-[#C9A6E8]/10 px-3 py-1 rounded-full">CSS</span>
+            <span class="text-[11px] uppercase tracking-wide text-[#C9A6E8] bg-[#C9A6E8]/10 px-3 py-1 rounded-full">JavaScript</span>
+          </div>
+          <div class="flex items-center gap-4 text-sm">
+            <a href="https://mini-ms-wordd.netlify.app/" class="text-[#F5EBFB] hover:text-[#C9A6E8] transition-colors">Live Demo →</a>
+            <a href="https://github.com/armeenashraf/Mini-MS-Word.git" class="text-white/40 hover:text-[#C9A6E8] transition-colors">GitHub</a>
+          </div>
+        </div>
+      </div>
+      <div class="rounded-2xl bg-gradient-to-b from-white/[0.06] to-white/[0.02] border border-white/10 overflow-hidden hover:border-[#C9A6E8]/60 hover:-translate-y-1 transition-all duration-300">
+        <div class="h-40 bg-white/5 flex items-center justify-center">
+          <img src="./images/pg.png" class="w-full h-full object-cover" alt="Project 3 preview">
+        </div>
+        <div class="p-6">
+          <h3 class="text-[#F5EBFB] font-semibold text-lg mb-2">Random Password Generator</h3>
+          <p class="text-sm text-white/50 leading-relaxed mb-4">Generates strong, random passwords in one click, with options for length and character types. No more struggling to think up a secure password.</p>
+          <div class="flex flex-wrap gap-2 mb-5">
+            <span class="text-[11px] uppercase tracking-wide text-[#C9A6E8] bg-[#C9A6E8]/10 px-3 py-1 rounded-full">HTML</span>
+            <span class="text-[11px] uppercase tracking-wide text-[#C9A6E8] bg-[#C9A6E8]/10 px-3 py-1 rounded-full">CSS</span>
+            <span class="text-[11px] uppercase tracking-wide text-[#C9A6E8] bg-[#C9A6E8]/10 px-3 py-1 rounded-full">JavaScript</span>
+          </div>
+          <div class="flex items-center gap-4 text-sm">
+            <a href="https://random-passwor.netlify.app/" class="text-[#F5EBFB] hover:text-[#C9A6E8] transition-colors">Live Demo →</a>
+            <a href="https://github.com/armeenashraf/Random-Password-Generator.git" class="text-white/40 hover:text-[#C9A6E8] transition-colors">GitHub</a>
+          </div>
+        </div>
+      </div>
+       <div class="rounded-2xl bg-gradient-to-b from-white/[0.06] to-white/[0.02] border border-white/10 overflow-hidden hover:border-[#C9A6E8]/60 hover:-translate-y-1 transition-all duration-300">
+        <div class="h-40 bg-white/5 flex items-center justify-center">
+          <img src="./images/tst.png" class="w-full h-full object-cover" alt="Project 1 preview">
+        </div>
+        <div class="p-6">
+          <h3 class="text-[#F5EBFB] font-semibold text-lg mb-2">Typing Speed Tester</h3>
+          <p class="text-sm text-white/50 leading-relaxed mb-4">Tests how fast and accurately you can type, showing your WPM and mistakes as you go. A fun way to practice and track improvement over time.</p>
+          <div class="flex flex-wrap gap-2 mb-5">
+            <span class="text-[11px] uppercase tracking-wide text-[#C9A6E8] bg-[#C9A6E8]/10 px-3 py-1 rounded-full">HTML</span>
+            <span class="text-[11px] uppercase tracking-wide text-[#C9A6E8] bg-[#C9A6E8]/10 px-3 py-1 rounded-full">CSS</span>
+            <span class="text-[11px] uppercase tracking-wide text-[#C9A6E8] bg-[#C9A6E8]/10 px-3 py-1 rounded-full">JavaScript</span>
+          </div>
+          <div class="flex items-center gap-4 text-sm">
+            <a href="https://typing-speed-checkingg.netlify.app/" class="text-[#F5EBFB] hover:text-[#C9A6E8] transition-colors">Live Demo →</a>
+            <a href="https://github.com/armeenashraf/Typing-Speed-Checker.git" class="text-white/40 hover:text-[#C9A6E8] transition-colors">GitHub</a>
+          </div>
+        </div>
+      </div>
+      <div class="rounded-2xl bg-gradient-to-b from-white/[0.06] to-white/[0.02] border border-white/10 overflow-hidden hover:border-[#C9A6E8]/60 hover:-translate-y-1 transition-all duration-300">
+        <div class="h-40 bg-white/5 flex items-center justify-center">
+          <img src="./images/dc.png" class="w-full h-full object-cover" alt="Project 2 preview">
+        </div>
+        <div class="p-6">
+          <h3 class="text-[#F5EBFB] font-semibold text-lg mb-2">Digital Calendar</h3>
+          <p class="text-sm text-white/50 leading-relaxed mb-4">A calendar that shows the current month, lets you flip between months, and highlights today. Made to practice using JavaScript's Date object.</p>
+          <div class="flex flex-wrap gap-2 mb-5">
+            <span class="text-[11px] uppercase tracking-wide text-[#C9A6E8] bg-[#C9A6E8]/10 px-3 py-1 rounded-full">HTML</span>
+            <span class="text-[11px] uppercase tracking-wide text-[#C9A6E8] bg-[#C9A6E8]/10 px-3 py-1 rounded-full">CSS</span>
+            <span class="text-[11px] uppercase tracking-wide text-[#C9A6E8] bg-[#C9A6E8]/10 px-3 py-1 rounded-full">JavaScript</span>
+          </div>
+          <div class="flex items-center gap-4 text-sm">
+            <a href="https://digital-calendarr.netlify.app/" class="text-[#F5EBFB] hover:text-[#C9A6E8] transition-colors">Live Demo →</a>
+            <a href="https://github.com/armeenashraf/Digital-Calendar.git" class="text-white/40 hover:text-[#C9A6E8] transition-colors">GitHub</a>
+          </div>
+        </div>
+      </div>
+      <div class="rounded-2xl bg-gradient-to-b from-white/[0.06] to-white/[0.02] border border-white/10 overflow-hidden hover:border-[#C9A6E8]/60 hover:-translate-y-1 transition-all duration-300">
+        <div class="h-40 bg-white/5 flex items-center justify-center">
+          <img src="./images/rf.png" class="w-full h-full object-cover" alt="Project 3 preview">
+        </div>
+        <div class="p-6">
+          <h3 class="text-[#F5EBFB] font-semibold text-lg mb-2">Registration Form</h3>
+          <p class="text-sm text-white/50 leading-relaxed mb-4">A registration form that shows your entered details after submitting, with a button to hide or reveal them again. Made to practice working with forms and JavaScript.</p>
+          <div class="flex flex-wrap gap-2 mb-5">
+            <span class="text-[11px] uppercase tracking-wide text-[#C9A6E8] bg-[#C9A6E8]/10 px-3 py-1 rounded-full">HTML</span>
+            <span class="text-[11px] uppercase tracking-wide text-[#C9A6E8] bg-[#C9A6E8]/10 px-3 py-1 rounded-full">CSS</span>
+               <span class="text-[11px] uppercase tracking-wide text-[#C9A6E8] bg-[#C9A6E8]/10 px-3 py-1 rounded-full">JavaScript</span>
+          </div>
+          <div class="flex items-center gap-4 text-sm">
+            <a href="https://registration-formsss.netlify.app/" class="text-[#F5EBFB] hover:text-[#C9A6E8] transition-colors">Live Demo →</a>
+            <a href="https://github.com/armeenashraf/Form-Submissions.git" class="text-white/40 hover:text-[#C9A6E8] transition-colors">GitHub</a>
+          </div>
+    </div>
+  </div>
+</section>
+<hr class="text-[#c9b3ff] h-3">
+<footer class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+    <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+     <img src="./images/logo.png" class="w-40">
+      <p class="mt-2 text-sm text-gray-300">Still learning. Still creating. Still becoming.
+</p>
+    </div>
+    <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium tracking-widest mb-3 text-3xl design">Links</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#education">Education</a>
+          </li>
+          <li>
+            <a href="#skills">Skills</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+        </nav>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-gray-900 tracking-widest mb-3 text-3xl design">Contact</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a href="mailto:armeenashraf805@gmail.com">Mail: armeenashraf805@gmail.com</a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/armeen-ashraf-17b295387/">Linked in: Armeen Ashraf</a>
+          </li>
+          <li>
+            <a href="https://github.com/armeenashraf">Github: armeenashraf</a>
+          </li>
+        </nav>
+      </div>
+     
+    </div>
+  </div>
+</footer>
+<script src="app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+</body>
+</html>
