@@ -23,10 +23,11 @@
         <button class="close-contact" id="closeContact">❌</button>
         <h2>Let's <span>Connect</span> 💜</h2>
         <p>Have a question or want to work together? Send me a message!</p>
-        <form id="contactForm" action="https://formsubmit.co/armeenashraf805@gmail.com" method="POST">
-            <input type="text" placeholder="Your Name" required>
-            <input  type="email"  placeholder="Your Email" required>
-            <textarea placeholder="Write your message..." required></textarea>
+       <form action="https://api.web3forms.com/submit" method="POST">
+  <input type="hidden" name="access_key" value="1d2106eb-04d9-4642-a82d-314ad3f689cc">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input  type="email" name="email"  placeholder="Your Email" required>
+            <textarea placeholder="Write your message..." name="message" required></textarea>
                <button type="submit" class="send-message">
                 Send Message ✨
             </button>
